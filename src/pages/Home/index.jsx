@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../../component/About";
 import Opener from "../../component/Opener";
 import Signup from "../../component/Signup";
 
@@ -7,6 +8,7 @@ export const Home = () => {
     <div>
       <Signup />
       <Opener />
+      <About />
     </div>
   );
 };

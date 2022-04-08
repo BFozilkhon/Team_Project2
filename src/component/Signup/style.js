@@ -1,10 +1,16 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    width: 90%;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #4C6FFF;
+    margin: auto;
+`
+
+Container.Title = styled.div`
     width: 100%;
     height: 80px;
     padding: 0 30px;
@@ -29,6 +35,15 @@ Container.Title = styled.div`
     font-size: 24px;
     line-height: 136.02%;
     color: #FFFFFF;
+`
+
+Container.Button = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #fff;
     @media (max-width:1400px)  { 
         font-size: 23px;
     }
@@ -59,6 +74,8 @@ Container.Btn = styled.div`
     line-height: 25px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-left: 25px;
+    border-radius: 2px;
     border: 2px solid white;
     padding: 8px 50px;
     margin-left: 25px;

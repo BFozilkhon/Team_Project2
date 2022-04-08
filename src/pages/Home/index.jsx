@@ -1,5 +1,4 @@
 import React from "react";
-// import { Signup } from "../../component/Signup/Signup";
 import Footer from "../../component/Footer";
 import About from "../../component/About";
 import Opener from "../../component/Opener";

@@ -3,6 +3,7 @@ import Footer from "../../component/Footer";
 import About from "../../component/About";
 import Opener from "../../component/Opener";
 import Signup from "../../component/Signup";
+import Product from "../../component/Product";
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
       <Signup />
       <Opener />
       <About />
+      <Product />
       <Footer />
     </div>
   );

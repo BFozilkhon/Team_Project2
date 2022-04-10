@@ -2,12 +2,12 @@ import React from "react";
 import { data } from "../../mock/card";
 import { CardAni, Container, Partner, Wrap } from "./style";
 
-export const Partners = () => {
+export const Ecosystem = () => {
   return (
     <Container>
       <Wrap>
         <Partner>
-          <Partner.Name>Partners & Investors</Partner.Name>
+          <Partner.Name>CDapps Ecosystem</Partner.Name>
           <Partner.Name1>Learn More &gt; </Partner.Name1>
         </Partner>
       </Wrap>
@@ -26,4 +26,4 @@ export const Partners = () => {
     </Container>
   );
 };
-export default Partners;
+export default Ecosystem;

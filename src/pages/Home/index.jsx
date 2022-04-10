@@ -6,14 +6,16 @@ import Opener from "../../component/Opener";
 import Signup from "../../component/Signup";
 import Partners from "../../component/Partners";
 import Product from "../../component/Product";
+import Ecosystem from "../../component/Ecosystem";
 
 export const Home = () => {
   return (
     <div>
       <Signup />
       <Opener />
-      <Account />
       <About />
+      <Ecosystem />
+      <Account />
       <Partners />
       <Product />
       <Footer />

@@ -1,4 +1,5 @@
 import React from "react";
+import Account from "../../component/Account";
 import Footer from "../../component/Footer";
 import About from "../../component/About";
 import Opener from "../../component/Opener";
@@ -10,6 +11,7 @@ export const Home = () => {
     <div>
       <Signup />
       <Opener />
+      <Account />
       <About />
       <Product />
       <Footer />

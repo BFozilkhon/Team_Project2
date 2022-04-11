@@ -7,6 +7,11 @@ const Wrapper = styled.div`
   flex-direction: column;
   margin-top: 141px;
   margin-bottom: 130px;
+  div {
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
 `;
 const WrapperProduct = styled.div`
   display: flex;
@@ -20,6 +25,19 @@ const WrapperProduct = styled.div`
     font-size: 48px;
     line-height: 136.02%;
     color: #ffffff;
+    @media (min-width: 1520px) {
+      font-size: 48px;
+    }
+    @media (max-width: 1519px) {
+      font-size: 44px;
+    }
+    @media (max-width: 776px) {
+      font-size: 40px;
+      line-height: 30px;
+    }
+    @media (max-width: 500px) {
+      font-size: 36px;
+    }
   }
   .learn {
     font-family: "Orbitron";
@@ -35,7 +53,9 @@ const WrapperProduct = styled.div`
 const FlexColumn = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: ${(center) => (center ? "center" : "none")};
+  /* align-items: flex-start; */
+  /* justify-content: start; */
+  /* align-items: ${(center) => (center ? "center" : "none")}; */
   .title {
     padding: 0 20px;
     font-family: "Inter";
@@ -46,13 +66,16 @@ const FlexColumn = styled.div`
     display: flex;
     align-items: flex-end;
     color: #cbd5e0;
+
+    @media (max-width: 520px) {
+      font-size: 18px;
+    }
   }
 `;
 
 const CardWrapper = styled.div`
-  width: 474px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 `;
 
 const Text = styled.div`
@@ -62,6 +85,18 @@ const Text = styled.div`
   font-size: 36px;
   line-height: 136.02%;
   color: #ffffff;
+  @media (min-width: 1520px) {
+    font-size: 36px;
+  }
+  @media (max-width: 1519px) {
+    font-size: 30px;
+  }
+  @media (max-width: 776px) {
+    font-size: 24px;
+  }
+  @media (max-width: 520px) {
+    font-size: 18px;
+  }
 `;
 const DisplayFlex = styled.div`
   margin: 22px;
@@ -81,6 +116,20 @@ const Title = styled.div`
   text-align: center;
   margin-bottom: 40px;
   color: #ffffff;
+  line-height: 65px;
+  @media (min-width: 1520px) {
+    font-size: 24px;
+  }
+  @media (max-width: 1519px) {
+    font-size: 20px;
+  }
+  @media (max-width: 776px) {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  @media (max-width: 520px) {
+    font-size: 12px;
+  }
 `;
 const Buttons = styled.div`
   width: 204px;
@@ -89,7 +138,7 @@ const Buttons = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  align-self: center;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -100,6 +149,9 @@ const Buttons = styled.div`
   text-transform: uppercase;
 
   color: #ffffff;
+  @media (max-width: 500px) {
+    width: 50%;
+  }
 `;
 
 export {
